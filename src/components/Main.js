@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import data from "../data.json";
 import Animal from "./Animal";
-
+import Search from "./Search";
 export default class Main extends Component {
   render() {
     return (
@@ -9,12 +9,17 @@ export default class Main extends Component {
       <p><h1 class = "pageTitle">Horned Animals</h1></p>
     {data.animal.map(animal => {
         return(
+          <>
             <Animal
             title = {animal.title}
             img = {animal.image}
             description = {animal.description}
             horns = {animal.horns}
+            />,
+            <Search
+            hornsAll = {animal.horns}
             />
+          </>
 
         )
 

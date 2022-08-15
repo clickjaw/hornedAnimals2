@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import{Card, Button} from 'react-bootstrap';
 
 
-
 export default class Animal extends Component {
 
   constructor(props){
@@ -22,6 +21,8 @@ export default class Animal extends Component {
   render() {
     return (
       <>
+
+    
       {/* passing data through the component. Need to use props */}
 
       {/* <h2>{this.props.title}</h2>
