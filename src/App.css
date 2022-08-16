@@ -47,8 +47,9 @@ body{
 }
 h1.pageTitle{
   display: grid;
-  justify-content: center;
-  text-decoration: underline;
+  justify-content: left;
+  margin-left: 25px;
+  font-size:36px;
 
 }
 
